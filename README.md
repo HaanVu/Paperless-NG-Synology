@@ -91,3 +91,9 @@ Thay
       - /volume1/docker/paperless-ng/consume:/usr/src/paperless/consume
 
     
+__Save lại__, có thể tuỳ ý thay đổi path theo ý muốn cho phù hợp, đây chỉ là hướng dẫn cho folder docker/paperless-ng được tạo trong volume1 của NAS
+
+## Compile paperless-ng
+- Log in vào Synology
+- Cài đặt để cho phép truy cập SSH vào Synology NAS theo các bước sau
+- 
