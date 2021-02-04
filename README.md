@@ -63,3 +63,31 @@ __Điều kiện:__
         consume
 - Cần cho phép thâm nhập vào Synology NAS qua SSH
 - Vào Control Panel -> Terminal and SNMP, chọn Enable SSH service, tuỳ port, default là port 22 và nhấn Apply
+# Thiết lập paperless-ng trên Synology
+Các bước kế tiếp cần thao tác trên PC khác bất kì hệ OS.
+
+Chỉnh đổi file docker-compose.yml, có thể open file bằng bất kì text reader nào để sửa (notepad/PC, TextEdit/MacOS, etc…)
+
+### Chỉnh file docker-compose.yml theo các bước sau:
+Thay line docker-compose.yml trong (copy/paste)
+
+    - pgdata:/var/lib/postgresql/data
+Thay bằng:
+
+    - /volume1/docker/paperless-ng/database:/var/lib/postgresql/data
+
+Tiếp thay 4 lines trong file docker-compose.yml
+
+      - data:/usr/src/paperless/data
+      - media:/usr/src/paperless/media
+      - ./export:/usr/src/paperless/export
+      - ./consume:/usr/src/paperless/consume
+
+Thay 
+
+      - /volume1/docker/paperless-ng/data:/usr/src/paperless/data
+      - /volume1/docker/paperless-ng/media:/usr/src/paperless/media
+      - /volume1/docker/paperless-ng/export:/usr/src/paperless/export
+      - /volume1/docker/paperless-ng/consume:/usr/src/paperless/consume
+
+    
