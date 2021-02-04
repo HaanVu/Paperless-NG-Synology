@@ -1,6 +1,6 @@
 # Paperless-NG-Synology
 
-## Hướng dẫn cài đặt Paperless-ng (https://github.com/jonaswinkler/paperless-ng) trên Synology NAS
+## Hướng dẫn cài đặt Paperless-ng 0.9.11 (https://github.com/jonaswinkler/paperless-ng) trên Synology NAS
 
 # Giới thiệu:
 Paperless là 1 web-app container chạy trên nền tảng docker, thường đc cài đặt trên các sever.
@@ -38,9 +38,28 @@ __Điều kiện:__
 
 - Truy cập vào (https://github.com/jonaswinkler/paperless-ng/releases/tag/ng-0.9.11)
 
-- Download paperless-ng-0.9.11-dockerfiles.tar.xz
+- Download: __paperless-ng-0.9.11-dockerfiles.tar.xz__
 
 - __Unpack__ và lưu 2 files: docker-compose.postgres.yml và docker-compose.env
 
 - __Rename__ docker-compose.postgres.yml vừa down thành: docker-compose.yml
 
+# Thiết lập trên Synology
+- Log in vào Synology
+- Tạo 1 folder docker trong Volume1
+- Bên trong docker folder tạo folder paperless-ng để chứa container
+- Copy 2 files docker-compose.yml và docker-compose.env vào folder paperless-ng
+- Bên trong folder paperless-ng lần lượt tạo thêm 4 folders tên: 
+
+        data
+
+
+        media
+
+
+        export
+
+
+        consume
+- Cần cho phép thâm nhập vào Synology NAS qua SSH
+- Vào Control Panel -> Terminal and SNMP, chọn Enable SSH service, tuỳ port, default là port 22 và nhấn Apply
