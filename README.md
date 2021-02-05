@@ -143,40 +143,47 @@ __Save lại__, có thể tuỳ ý thay đổi path theo ý muốn cho phù hợ
 # OPTIONAL 
 ## Scanner cho paperless-ng
 Các bước sau dành cho ai muốn dùng máy scan dữ liệu về paperless-ng
-
-Chỉ áp dụng cho máy Scanner có hộ trợ transfer file qua FTP
+__
+Chỉ áp dụng cho máy __Scanner có hộ trợ transfer file qua FTP__
 
 - Log in vào Synology NAS
-- Chọn Control Panel
+- Chọn __Control Panel__
 
  <img width="300" alt="Screen" src="https://user-images.githubusercontent.com/78508001/107071942-4ed2e280-679a-11eb-801d-2b077e006433.png">
 
- - Vào Shared FOlder tạo Folder mới trong volume1, đặt tên bất kì, tạm đặt là FTP
+ - Vào __Shared Folder__ tạo Folder mới trong volume1, đặt tên bất kì, tạm đặt là FTP
 
  <img width="92" alt="Screen Shot 2021-02-05 at 10 25 52 AM" src="https://user-images.githubusercontent.com/78508001/107073706-8b074280-679c-11eb-9f20-1a7308eb0235.png">
 
 
-- Choose User
+- Choose __User__
 
  <img width="200" alt="Screen Shot 2021-02-05 at 10 11 28 AM" src="https://user-images.githubusercontent.com/78508001/107072087-85a8f880-679a-11eb-8f7b-a0bfd09f2e19.png">
 
- - Tạo account mới tên bất kì, trong bài sẽ tạm đặt là FTP
+ - Tạo account mới tên bất kì, trong bài sẽ tạm đặt là __FTP__ , password tuỳ chọn
  
-- Chuyển sang phần File Services
+- Chuyển sang phần __File Services__
 
 
  <img width="150" alt="Screen Shot 2021-02-05 at 10 14 25 AM" src="https://user-images.githubusercontent.com/78508001/107072413-edf7da00-679a-11eb-9c4f-5a995e532e01.png">
 
-- Chọn Tab FTP, nhấn enable FTP 
+- Chọn Tab __FTP__, nhấn enable __FTP__ 
 
 <img width="797" alt="Screen Shot 2021-02-05 at 10 15 40 AM" src="https://user-images.githubusercontent.com/78508001/107072586-1b448800-679b-11eb-895e-4f0419951293.png">
 
-- Vẫn ở Tab FTP, kéo xuống dưới phần General
+- Vẫn ở Tab __FTP__, kéo xuống dưới phần General
 <img width="584" alt="Screen Shot 2021-02-05 at 10 17 15 AM" src="https://user-images.githubusercontent.com/78508001/107072778-534bcb00-679b-11eb-892a-c943459d1a97.png">
 
-- Click Advanced Setting sau đó cho phép Change user root directories
+- Click __Advanced Setting__ sau đó cho phép __Change user root directories__
 
 <img width="256" alt="Screen Shot 2021-02-05 at 10 22 21 AM" src="https://user-images.githubusercontent.com/78508001/107073297-09afb000-679c-11eb-855e-443da556c642.png">
+
+|
+
+
+|
+
+
 
 - Sau đó click vào Select User
 
@@ -189,11 +196,11 @@ Chỉ áp dụng cho máy Scanner có hộ trợ transfer file qua FTP
 
 Một số scanner phù hợp đã có listed bên paperless-ng, có thể tham khảo trong phần documentation bên paperless-ng
 
-Cài đặt printer chuyển ftp tới Synology NAS. Do tuỳ printer nên không có hình cụ thể. 
+Cài đặt scanner chuyển ftp tới Synology NAS. Do tuỳ scanner nên không có hình cụ thể. 
 
-Địa chỉ dựa theo account đã tạo trong bài là
+Địa chỉ dựa theo user đã tạo trong bài là
 
-    ftp@xxx.xxx.xx.xx
+    FTP@xxx.xxx.xx.xx
 
 Toàn bộ file scan sẽ đước chuyển về folder FTP đã tạo trong volume1
 
