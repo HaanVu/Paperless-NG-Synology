@@ -95,5 +95,28 @@ __Save lại__, có thể tuỳ ý thay đổi path theo ý muốn cho phù hợ
 
 ## Compile paperless-ng
 - Log in vào Synology
-- Cài đặt để cho phép truy cập SSH vào Synology NAS theo các bước sau
-- 
+- Truy cập SSH với user root or admin vào Synology NAS (Putty or Terminal...) theo setting đã chọn ở bước trên
+
+
+    ssh root@xxx.xxx.xx.xx
+- Di chuyển tới folder paperless-ng (volume1/docker/paperpless-ng)
+- Nhập lệnh để compile container paperles-ng
+
+        docker-compose up -d
+
+- Đợi tạo container hoàn thành healthy và không lỗi
+- Tiếp nhận lệnh sau để tạo account superuser cho paperless-ng app
+
+        docker-compose run --rm webserver createsuperuser
+- Tạo admin account tuỳ ý
+
+## Hướng dẫn sử dụng paperless-ng
+- Paperless-ng container sẽ tự động chạy khi NAS bật
+- Truy cập vào port của paperless để xác nhận, theo default port là 7300
+- Vào browser truy cập tới port của paperless-ng trên Synology NASintit
+        
+        192.168.xx.xx:7300 
+- Nhập username và password đã chọn
+
+
+# Chúc mứng bạn đã bắt đầu sử dụng paperless-ng
