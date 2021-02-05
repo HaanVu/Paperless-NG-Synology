@@ -120,3 +120,32 @@ __Save lại__, có thể tuỳ ý thay đổi path theo ý muốn cho phù hợ
 
 
 # Chúc mứng bạn đã bắt đầu sử dụng paperless-ng
+
+ 
+ |
+
+
+ |
+
+ |
+
+ |
+
+ |
+
+ |
+
+
+
+
+
+
+# OPTIONAL 
+## Scanner cho paperless-ng
+Các bước sau dành cho ai muốn dùng máy scan dữ liệu về paperless-ng
+
+Chỉ áp dụng cho máy Scanner có hộ trợ transfer file qua FTP
+
+- Log in vào Synology NAS
+- ![123](/Users/neovu/Downloads/Photos/20191113_115517.jpg)
+
